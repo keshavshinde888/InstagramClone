@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+.header{
+  background-color: darkgreen;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 130%;
+}
+.ImgDiv {
+  display: flex;
+  justify-content: center;  
+  /* align-items: center;       */
+  height: 100vh;    
+  margin-top: 10px;        
+}
+
+.ImgDiv img {
+  width: 24%;               
+  height: 75%;             
+}
