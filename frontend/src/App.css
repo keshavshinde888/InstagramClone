@@ -37,6 +37,9 @@
   }
 }
 .header{
+  display: grid;
+  grid-template-columns: repeat(2, 100px); /* Three columns with equal width */
+  grid-gap: 30rem;
   background-color: darkgreen;
   padding: 10px;
   text-align: center;
