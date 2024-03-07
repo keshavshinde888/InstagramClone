@@ -1,8 +1,11 @@
 const express=require("express")
+const mongoose = require('mongoose');
 const app=express()
 const cors=require('cors')
-const {dbConnection}=require("./DB/database.js")
+// const {dbConnection}=require("./DB/database.js")
+const connectDb = require("./Config/dbConnection.js");
 const multer = require('multer');
+connectDb()
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
       cb(null, 'uploads/');
